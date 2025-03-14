@@ -1,0 +1,39 @@
+version: '3.8'
+
+networks:
+  redDocker:
+
+services:
+  wordpress:
+    image: wordpress:latest
+    ports:
+      - "82:80"
+    restart: always
+    depends_on:
+      - mariadb
+    environment:
+      WORDPRESS_DB_HOST: mariadb
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpresspass
+      WORDPRESS_DB_NAME: wordpress
+    volumes:
+      - wordpress_data:/var/www/html
+    networks:
+      - redDocker
+
+  mariadb:
+    image: mariadb:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpresspass
+    volumes:
+      - mariadb_data:/var/lib/mysql
+    networks:
+      - redDocker
+
+volumes:
+  wordpress_data:
+  mariadb_data:
