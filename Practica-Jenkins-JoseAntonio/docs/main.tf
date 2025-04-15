@@ -22,7 +22,6 @@ resource "docker_image" "jenkins_blueocean" {
   name = "jenkinsci/blueocean"
 }
 
-# Crear contenedor Jenkins BlueOcean
 resource "docker_container" "jenkins" {
   name  = "jenkins"
   image = docker_image.jenkins_blueocean.name
@@ -41,11 +40,18 @@ resource "docker_container" "jenkins" {
     name = docker_network.jenkins.name
   }
 
-  volumes {
-    container_path = "/var/jenkins_home"
-    host_path      = abspath("${path.module}/jenkins_home")
-  }
+  volumes = [
+    {
+      container_path = "/var/jenkins_home"
+      host_path      = abspath("${path.module}/jenkins_home")
+    },
+    {
+      container_path = "/var/run/docker.sock"
+      host_path      = "/var/run/docker.sock"
+    }
+  ]
 }
+
 
 # Crear imagen Docker-in-Docker (DinD)
 resource "docker_image" "dind" {
