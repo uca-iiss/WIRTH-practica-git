@@ -1,0 +1,151 @@
+--- Copying files at Tue Apr 15 11:21:16 UTC 2025
+INSTALLED plugins/token-macro.jpi : 308.v4f2b_ed62b_b_16
+INSTALLED plugins/handy-uri-templates-2-api.jpi : 2.1.8-22.v77d5b_75e6953
+INSTALLED plugins/durable-task.jpi : 500.v8927d9fd99d8
+INSTALLED plugins/blueocean-rest.jpi : 1.25.7
+INSTALLED plugins/git.jpi : 4.11.5
+INSTALLED plugins/javax-activation-api.jpi : 1.2.0-4
+INSTALLED plugins/popper2-api.jpi : 2.11.6-1
+INSTALLED plugins/pipeline-milestone-step.jpi : 101.vd572fef9d926
+INSTALLED plugins/pipeline-model-api.jpi : 2.2114.v2654ca_721309
+INSTALLED plugins/blueocean-web.jpi : 1.25.7
+INSTALLED plugins/github.jpi : 1.34.3.1
+INSTALLED plugins/blueocean-bitbucket-pipeline.jpi : 1.25.7
+INSTALLED plugins/plugin-util-api.jpi : 2.17.0
+INSTALLED plugins/workflow-api.jpi : 1192.v2d0deb_19d212
+INSTALLED plugins/font-awesome-api.jpi : 6.1.2-1
+INSTALLED plugins/github-api.jpi : 1.303-400.v35c2d8258028
+INSTALLED plugins/matrix-auth.jpi : 3.1.5
+INSTALLED plugins/branch-api.jpi : 2.1046.v0ca_37783ecc5
+INSTALLED plugins/trilead-api.jpi : 1.67.vc3938a_35172f
+INSTALLED plugins/blueocean-display-url.jpi : 2.4.1
+INSTALLED plugins/ace-editor.jpi : 1.1
+INSTALLED plugins/script-security.jpi : 1175.v4b_d517d6db_f0
+INSTALLED plugins/workflow-basic-steps.jpi : 994.vd57e3ca_46d24
+INSTALLED plugins/blueocean-config.jpi : 1.25.7
+INSTALLED plugins/authentication-tokens.jpi : 1.4
+INSTALLED plugins/blueocean-jwt.jpi : 1.25.7
+INSTALLED plugins/jsch.jpi : 0.1.55.61.va_e9ee26616e7
+INSTALLED plugins/blueocean-events.jpi : 1.25.7
+INSTALLED plugins/blueocean-pipeline-scm-api.jpi : 1.25.7
+INSTALLED plugins/htmlpublisher.jpi : 1.30
+INSTALLED plugins/bootstrap5-api.jpi : 5.2.0-1
+INSTALLED plugins/pipeline-model-extensions.jpi : 2.2114.v2654ca_721309
+INSTALLED plugins/git-client.jpi : 3.11.2
+INSTALLED plugins/pipeline-input-step.jpi : 449.v77f0e8b_845c4
+INSTALLED plugins/matrix-project.jpi : 772.v494f19991984
+INSTALLED plugins/pipeline-model-definition.jpi : 2.2114.v2654ca_721309
+INSTALLED plugins/blueocean-core-js.jpi : 1.25.7
+INSTALLED plugins/sse-gateway.jpi : 1.25
+INSTALLED plugins/pipeline-stage-tags-metadata.jpi : 2.2114.v2654ca_721309
+INSTALLED plugins/blueocean-pipeline-api-impl.jpi : 1.25.7
+INSTALLED plugins/pipeline-groovy-lib.jpi : 612.v84da_9c54906d
+INSTALLED plugins/blueocean-commons.jpi : 1.25.7
+INSTALLED plugins/cloudbees-folder.jpi : 6.740.ve4f4ffa_dea_54
+INSTALLED plugins/blueocean-autofavorite.jpi : 1.2.5
+INSTALLED plugins/jjwt-api.jpi : 0.11.5-77.v646c772fddb_0
+INSTALLED plugins/blueocean-pipeline-editor.jpi : 1.25.7
+INSTALLED plugins/workflow-cps.jpi : 2729.vea_17b_79ed57a_
+INSTALLED plugins/structs.jpi : 324.va_f5d6774f3a_d
+INSTALLED plugins/ssh-credentials.jpi : 277.280.v1e86b_7d0056b_
+INSTALLED plugins/display-url-api.jpi : 2.3.6
+INSTALLED plugins/apache-httpcomponents-client-4-api.jpi : 4.5.13-138.v4e7d9a_7b_a_e61
+INSTALLED plugins/caffeine-api.jpi : 2.9.3-65.v6a_47d0f4d1fe
+INSTALLED plugins/blueocean-rest-impl.jpi : 1.25.7
+INSTALLED plugins/workflow-job.jpi : 1189.va_d37a_e9e4eda_
+INSTALLED plugins/workflow-support.jpi : 838.va_3a_087b_4055b
+INSTALLED plugins/junit.jpi : 1119.1121.vc43d0fc45561
+INSTALLED plugins/favorite.jpi : 2.4.1
+INSTALLED plugins/workflow-multibranch.jpi : 716.vc692a_e52371b_
+INSTALLED plugins/blueocean-i18n.jpi : 1.25.7
+INSTALLED plugins/blueocean-dashboard.jpi : 1.25.7
+INSTALLED plugins/jquery3-api.jpi : 3.6.0-4
+INSTALLED plugins/snakeyaml-api.jpi : 1.31-84.ve43da_fb_49d0b
+INSTALLED plugins/scm-api.jpi : 621.vda_a_b_055e58f7
+INSTALLED plugins/antisamy-markup-formatter.jpi : 2.7
+INSTALLED plugins/mailer.jpi : 435.v79ef3972b_5c7
+INSTALLED plugins/pipeline-stage-step.jpi : 293.v200037eefcd5
+INSTALLED plugins/variant.jpi : 59.vf075fe829ccb
+INSTALLED plugins/jenkins-design-language.jpi : 1.25.7
+INSTALLED plugins/blueocean-personalization.jpi : 1.25.7
+INSTALLED plugins/pipeline-graph-analysis.jpi : 195.v5812d95a_a_2f9
+INSTALLED plugins/workflow-durable-task-step.jpi : 1190.vc93d7d457042
+INSTALLED plugins/blueocean-github-pipeline.jpi : 1.25.7
+INSTALLED plugins/workflow-step-api.jpi : 639.v6eca_cd8c04a_a_
+INSTALLED plugins/checks-api.jpi : 1.7.5
+INSTALLED plugins/jackson2-api.jpi : 2.13.3-285.vc03c0256d517
+INSTALLED plugins/pipeline-build-step.jpi : 2.18
+INSTALLED plugins/jakarta-activation-api.jpi : 2.0.1-1
+INSTALLED plugins/okhttp-api.jpi : 4.9.3-108.v0feda04578cf
+INSTALLED plugins/cloudbees-bitbucket-branch-source.jpi : 791.vb_eea_a_476405b
+INSTALLED plugins/plain-credentials.jpi : 139.ved2b_9cf7587b
+INSTALLED plugins/echarts-api.jpi : 5.3.3-1
+INSTALLED plugins/blueocean-git-pipeline.jpi : 1.25.7
+INSTALLED plugins/jakarta-mail-api.jpi : 2.0.1-1
+INSTALLED plugins/blueocean.jpi : 1.25.7
+INSTALLED plugins/github-branch-source.jpi : 1677.v731f745ea_0cf
+INSTALLED plugins/pubsub-light.jpi : 1.16
+INSTALLED plugins/jaxb.jpi : 2.3.6-1
+INSTALLED plugins/credentials.jpi : 1143.vb_e8b_b_ceee347
+INSTALLED plugins/workflow-scm-step.jpi : 400.v6b_89a_1317c9a_
+INSTALLED plugins/credentials-binding.jpi : 523.vd859a_4b_122e6
+--- Copying files at Tue Apr 15 14:27:21 UTC 2025
+SKIPPED plugins/token-macro.jpi : Installed version (400.v35420b_922dcb_) has been manually upgraded from initial version (308.v4f2b_ed62b_b_16)
+SKIPPED plugins/durable-task.jpi : Installed version (568.v8fb_5c57e8417) has been manually upgraded from initial version (500.v8927d9fd99d8)
+SKIPPED plugins/git.jpi : Installed version (5.2.2) has been manually upgraded from initial version (4.11.5)
+SKIPPED plugins/javax-activation-api.jpi : Installed version (1.2.0-7) has been manually upgraded from initial version (1.2.0-4)
+SKIPPED plugins/pipeline-milestone-step.jpi : Installed version (119.vdfdc43fc3b_9a_) has been manually upgraded from initial version (101.vd572fef9d926)
+SKIPPED plugins/pipeline-model-api.jpi : Installed version (2.2218.v56d0cda_37c72) has been manually upgraded from initial version (2.2114.v2654ca_721309)
+SKIPPED plugins/github.jpi : Installed version (1.40.0) has been manually upgraded from initial version (1.34.3.1)
+SKIPPED plugins/plugin-util-api.jpi : Installed version (4.1.0) has been manually upgraded from initial version (2.17.0)
+SKIPPED plugins/workflow-api.jpi : Installed version (1322.v857eeeea_9902) has been manually upgraded from initial version (1192.v2d0deb_19d212)
+SKIPPED plugins/font-awesome-api.jpi : Installed version (6.6.0-2) has been manually upgraded from initial version (6.1.2-1)
+SKIPPED plugins/github-api.jpi : Installed version (1.321-468.v6a_9f5f2d5a_7e) has been manually upgraded from initial version (1.303-400.v35c2d8258028)
+SKIPPED plugins/matrix-auth.jpi : Installed version (3.2.3) has been manually upgraded from initial version (3.1.5)
+SKIPPED plugins/branch-api.jpi : Installed version (2.1178.v969d9eb_c728e) has been manually upgraded from initial version (2.1046.v0ca_37783ecc5)
+SKIPPED plugins/trilead-api.jpi : Installed version (2.147.vb_73cc728a_32e) has been manually upgraded from initial version (1.67.vc3938a_35172f)
+SKIPPED plugins/script-security.jpi : Installed version (1369.v9b_98a_4e95b_2d) has been manually upgraded from initial version (1175.v4b_d517d6db_f0)
+SKIPPED plugins/workflow-basic-steps.jpi : Installed version (1058.vcb_fc1e3a_21a_9) has been manually upgraded from initial version (994.vd57e3ca_46d24)
+SKIPPED plugins/bootstrap5-api.jpi : Installed version (5.3.3-1) has been manually upgraded from initial version (5.2.0-1)
+SKIPPED plugins/pipeline-model-extensions.jpi : Installed version (2.2218.v56d0cda_37c72) has been manually upgraded from initial version (2.2114.v2654ca_721309)
+SKIPPED plugins/git-client.jpi : Installed version (4.7.0) has been manually upgraded from initial version (3.11.2)
+SKIPPED plugins/pipeline-input-step.jpi : Installed version (495.ve9c153f6067b_) has been manually upgraded from initial version (449.v77f0e8b_845c4)
+SKIPPED plugins/matrix-project.jpi : Installed version (822.824.v14451b_c0fd42) has been manually upgraded from initial version (772.v494f19991984)
+SKIPPED plugins/pipeline-model-definition.jpi : Installed version (2.2218.v56d0cda_37c72) has been manually upgraded from initial version (2.2114.v2654ca_721309)
+SKIPPED plugins/pipeline-stage-tags-metadata.jpi : Installed version (2.2218.v56d0cda_37c72) has been manually upgraded from initial version (2.2114.v2654ca_721309)
+SKIPPED plugins/pipeline-groovy-lib.jpi : Installed version (745.vdf6077913de0) has been manually upgraded from initial version (612.v84da_9c54906d)
+SKIPPED plugins/cloudbees-folder.jpi : Installed version (6.901.vb_4c7a_da_75da_3) has been manually upgraded from initial version (6.740.ve4f4ffa_dea_54)
+SKIPPED plugins/jjwt-api.jpi : Installed version (0.11.5-112.ve82dfb_224b_a_d) has been manually upgraded from initial version (0.11.5-77.v646c772fddb_0)
+SKIPPED plugins/workflow-cps.jpi : Installed version (4000.v5198556e9cea_) has been manually upgraded from initial version (2729.vea_17b_79ed57a_)
+SKIPPED plugins/structs.jpi : Installed version (338.v848422169819) has been manually upgraded from initial version (324.va_f5d6774f3a_d)
+SKIPPED plugins/ssh-credentials.jpi : Installed version (343.v884f71d78167) has been manually upgraded from initial version (277.280.v1e86b_7d0056b_)
+SKIPPED plugins/display-url-api.jpi : Installed version (2.204.vf6fddd8a_8b_e9) has been manually upgraded from initial version (2.3.6)
+SKIPPED plugins/apache-httpcomponents-client-4-api.jpi : Installed version (4.5.14-208.v438351942757) has been manually upgraded from initial version (4.5.13-138.v4e7d9a_7b_a_e61)
+SKIPPED plugins/caffeine-api.jpi : Installed version (3.1.8-133.v17b_1ff2e0599) has been manually upgraded from initial version (2.9.3-65.v6a_47d0f4d1fe)
+SKIPPED plugins/workflow-job.jpi : Installed version (1400.v7fd111b_ec82f) has been manually upgraded from initial version (1189.va_d37a_e9e4eda_)
+SKIPPED plugins/workflow-support.jpi : Installed version (920.v59f71ce16f04) has been manually upgraded from initial version (838.va_3a_087b_4055b)
+SKIPPED plugins/junit.jpi : Installed version (1312.v1a_235a_b_94a_31) has been manually upgraded from initial version (1119.1121.vc43d0fc45561)
+SKIPPED plugins/workflow-multibranch.jpi : Installed version (773.vc4fe1378f1d5) has been manually upgraded from initial version (716.vc692a_e52371b_)
+SKIPPED plugins/jquery3-api.jpi : Installed version (3.7.1-2) has been manually upgraded from initial version (3.6.0-4)
+SKIPPED plugins/snakeyaml-api.jpi : Installed version (2.3-123.v13484c65210a_) has been manually upgraded from initial version (1.31-84.ve43da_fb_49d0b)
+SKIPPED plugins/scm-api.jpi : Installed version (696.v778d637b_a_762) has been manually upgraded from initial version (621.vda_a_b_055e58f7)
+SKIPPED plugins/antisamy-markup-formatter.jpi : Installed version (162.v0e6ec0fcfcf6) has been manually upgraded from initial version (2.7)
+SKIPPED plugins/mailer.jpi : Installed version (472.vf7c289a_4b_420) has been manually upgraded from initial version (435.v79ef3972b_5c7)
+SKIPPED plugins/pipeline-stage-step.jpi : Installed version (312.v8cd10304c27a_) has been manually upgraded from initial version (293.v200037eefcd5)
+SKIPPED plugins/variant.jpi : Installed version (60.v7290fc0eb_b_cd) has been manually upgraded from initial version (59.vf075fe829ccb)
+SKIPPED plugins/pipeline-graph-analysis.jpi : Installed version (216.vfd8b_ece330ca_) has been manually upgraded from initial version (195.v5812d95a_a_2f9)
+SKIPPED plugins/workflow-durable-task-step.jpi : Installed version (1378.v6a_3e903058a_3) has been manually upgraded from initial version (1190.vc93d7d457042)
+SKIPPED plugins/workflow-step-api.jpi : Installed version (678.v3ee58b_469476) has been manually upgraded from initial version (639.v6eca_cd8c04a_a_)
+SKIPPED plugins/checks-api.jpi : Installed version (2.2.3) has been manually upgraded from initial version (1.7.5)
+SKIPPED plugins/jackson2-api.jpi : Installed version (2.18.3-396.v93cc2d00b_b_7b_) has been manually upgraded from initial version (2.13.3-285.vc03c0256d517)
+SKIPPED plugins/pipeline-build-step.jpi : Installed version (540.vb_e8849e1a_b_d8) has been manually upgraded from initial version (2.18)
+SKIPPED plugins/jakarta-activation-api.jpi : Installed version (2.1.3-1) has been manually upgraded from initial version (2.0.1-1)
+SKIPPED plugins/okhttp-api.jpi : Installed version (4.11.0-172.vda_da_1feeb_c6e) has been manually upgraded from initial version (4.9.3-108.v0feda04578cf)
+SKIPPED plugins/plain-credentials.jpi : Installed version (183.va_de8f1dd5a_2b_) has been manually upgraded from initial version (139.ved2b_9cf7587b)
+SKIPPED plugins/echarts-api.jpi : Installed version (5.5.1-4) has been manually upgraded from initial version (5.3.3-1)
+SKIPPED plugins/jakarta-mail-api.jpi : Installed version (2.1.3-1) has been manually upgraded from initial version (2.0.1-1)
+SKIPPED plugins/github-branch-source.jpi : Installed version (1793.v1831e9c68d77) has been manually upgraded from initial version (1677.v731f745ea_0cf)
+SKIPPED plugins/jaxb.jpi : Installed version (2.3.9-1) has been manually upgraded from initial version (2.3.6-1)
+SKIPPED plugins/credentials.jpi : Installed version (1380.va_435002fa_924) has been manually upgraded from initial version (1143.vb_e8b_b_ceee347)
+SKIPPED plugins/workflow-scm-step.jpi : Installed version (427.v4ca_6512e7df1) has been manually upgraded from initial version (400.v6b_89a_1317c9a_)
+SKIPPED plugins/credentials-binding.jpi : Installed version (681.vf91669a_32e45) has been manually upgraded from initial version (523.vd859a_4b_122e6)
