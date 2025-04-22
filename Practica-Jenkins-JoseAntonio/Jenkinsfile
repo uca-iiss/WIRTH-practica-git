@@ -1,16 +1,10 @@
 pipeline {
-    agent any
+    agent any 
     stages {
-        stage('Checkout SCM') {
+        stage('Build') { 
             steps {
-                checkout scm
-                sh 'ls -R'  // Lista los archivos recursivamente
-            }
-        }
-        stage('Build') {
-            steps {
-                sh 'python -m py_compile sources/add2vals.py sources/calc.py'
-                stash(name: 'compiled-results', includes: 'sources/*.py*')
+                sh 'python -m py_compile Practica-Jenkins-JoseAntonio/sources/add2vals.py Practica-Jenkins-JoseAntonio/sources/calc.py' 
+                stash(name: 'compiled-results', includes: 'Practica-Jenkins-JoseAntonio/sources/*.py*') 
             }
         }
     }
