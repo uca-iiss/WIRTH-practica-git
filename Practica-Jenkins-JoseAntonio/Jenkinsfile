@@ -1,32 +1,38 @@
 pipeline {
     agent any
+    environment {
+        DOCKER_IMAGE = "custom-jenkins"  // Nombre de la imagen de Jenkins personalizada
+    }
     stages {
         stage('Build') {
             steps {
-                sh 'python -m py_compile Practica-Jenkins-JoseAntonio/sources/add2vals.py Practica-Jenkins-JoseAntonio/sources/calc.py'
-                stash(name: 'compiled-results', includes: 'Practica-Jenkins-JoseAntonio/sources/*.py*')
-            }
-        }
-        stage('Test') { 
-            steps {
-                sh 'py.test --junit-xml test-reports/results.xml Practica-Jenkins-JoseAntonio/sources/test_calc.py' 
-            }
-            post {
-                always {
-                    junit 'test-reports/results.xml' 
+                script {
+                    // Construir la imagen Docker del frontend de React
+                    sh 'docker build -t react-app .'
                 }
             }
         }
-        stage('Deliver') { 
+        stage('Test') {
             steps {
-                sh "pyinstaller --onefile Practica-Jenkins-JoseAntonio/sources/add2vals.py" 
+                script {
+                    // Ejecutar pruebas si las tienes configuradas
+                    sh 'docker run --rm react-app npm test'
+                }
             }
-            post {
-                success {
-                    archiveArtifacts 'dist/add2vals' 
+        }
+        stage('Deploy') {
+            steps {
+                script {
+                    // Desplegar la app a un contenedor de producción usando Docker
+                    sh 'docker run -d -p 80:80 react-app'
                 }
             }
         }
     }
+    post {
+        always {
+            // Limpiar contenedores Docker después del despliegue
+            sh 'docker system prune -f'
+        }
+    }
 }
-
