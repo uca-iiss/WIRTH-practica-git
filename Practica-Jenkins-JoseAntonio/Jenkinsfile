@@ -1,13 +1,16 @@
 pipeline {
     agent any
-    environment {
-        DOCKER_IMAGE = "custom-jenkins"  // Nombre de la imagen de Jenkins personalizada
-    }
     stages {
+        stage('Check Docker Version') {
+            steps {
+                script {
+                    sh 'docker --version'
+                }
+            }
+        }
         stage('Build') {
             steps {
                 script {
-                    // Construir la imagen Docker del frontend de React
                     sh 'docker build -t react-app .'
                 }
             }
@@ -15,7 +18,6 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    // Ejecutar pruebas si las tienes configuradas
                     sh 'docker run --rm react-app npm test'
                 }
             }
@@ -23,16 +25,9 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                    // Desplegar la app a un contenedor de producción usando Docker
                     sh 'docker run -d -p 80:80 react-app'
                 }
             }
-        }
-    }
-    post {
-        always {
-            // Limpiar contenedores Docker después del despliegue
-            sh 'docker system prune -f'
         }
     }
 }
