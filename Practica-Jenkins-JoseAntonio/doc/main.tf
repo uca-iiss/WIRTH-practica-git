@@ -10,7 +10,7 @@ terraform {
 provider "docker" {}
 
 resource "docker_image" "jenkins" {
-  name         = "jenkins/jenkins"
+  name         = "custom-jenkins"
   keep_locally = false
 }
 
