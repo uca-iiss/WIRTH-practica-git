@@ -10,7 +10,7 @@ terraform {
 provider "docker" {}
 
 resource "docker_image" "jenkins" {
-  name         = "custom-jenkins"
+  name         = "jenkins/jenkins"
   keep_locally = false
 }
 
@@ -37,3 +37,4 @@ resource "docker_container" "dind" {
   image       = docker_image.dind.name
   privileged  = true
 }
+

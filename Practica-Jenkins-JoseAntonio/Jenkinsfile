@@ -1,32 +1,20 @@
 pipeline {
     agent any
+
     stages {
-        stage('Check Docker Version') {
+        stage('Clone repository') {
             steps {
-                script {
-                    sh 'docker --version'
-                }
+                checkout scm
             }
         }
-        stage('Build') {
+        stage('Build Docker image') {
             steps {
-                script {
-                    sh 'docker build -t react-app .'
-                }
+                sh 'docker build -t myapp:latest .'
             }
         }
-        stage('Test') {
+        stage('Run Docker container') {
             steps {
-                script {
-                    sh 'docker run --rm react-app npm test'
-                }
-            }
-        }
-        stage('Deploy') {
-            steps {
-                script {
-                    sh 'docker run -d -p 80:80 react-app'
-                }
+                sh 'docker run -d -p 3000:3000 myapp:latest'
             }
         }
     }
