@@ -159,7 +159,6 @@ pipeline {
 - Además debemos crear en el main un dockerfile con el cual le diremos como debe ser la aplicacion que se lance
 
 ```Dockerfile
-# Usa una imagen oficial de Node
 FROM node:18
 WORKDIR /usr/src/app
 COPY package*.json ./
