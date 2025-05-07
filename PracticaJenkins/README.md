@@ -39,7 +39,7 @@ Este repositorio contiene la práctica de la asignatura **IISS** de la Universid
 
 ### 1. Dockerfile personalizado
 
-Se ha creado una imagen personalizada de Jenkins a partir de `jenkins/jenkins:lts`, el mayor problema de la práctica la tuve en este punto ya que no conseguia que el usuario tuviera acceso a /var/run/docker.sock
+Se ha creado una imagen personalizada de Jenkins a partir de `jenkins/jenkins:lts`, el mayor problema de la práctica que obtuvimos fue en este punto ya que no se conseguia que el usuario tuviera acceso a /var/run/docker.sock
 
 ```dockerfile
 FROM jenkins/jenkins:lts
