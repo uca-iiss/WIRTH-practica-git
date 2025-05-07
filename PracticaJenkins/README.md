@@ -2,7 +2,7 @@
 
 ## Autor
 
-- José Antonio Montes Solano
+- José Antonio Montes Solano & Adrián González Vega
 
 ## Repositorio
 
@@ -15,9 +15,6 @@ Este repositorio contiene la práctica de la asignatura **IISS** de la Universid
 - [Tecnologías](#tecnologías)
 - [Requisitos](#requisitos)
 - [Pasos realizados](#pasos-realizados)
-- [Estructura del proyecto](#estructura-del-proyecto)
-- [Errores comunes](#errores-comunes)
-- [Capturas](#capturas)
 
 ---
 
