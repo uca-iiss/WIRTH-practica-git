@@ -45,18 +45,32 @@ Este repositorio contiene la práctica de la asignatura **IISS** de la Universid
 Se ha creado una imagen personalizada de Jenkins a partir de `jenkins/jenkins:lts`, el mayor problema de la práctica la tuve en este punto ya que no conseguia que el usuario tuviera acceso a /var/run/docker.sock
 
 ```dockerfile
-FROM jenkins/jenkins
+FROM jenkins/jenkins:lts
+
 USER root
-RUN apt-get update && apt-get install -y lsb-release
-RUN curl -fsSLo /usr/share/keyrings/docker-archive-keyring.asc \
-https://download.docker.com/linux/debian/gpg
-RUN echo "deb [arch=$(dpkg --print-architecture) \
-signed-by=/usr/share/keyrings/docker-archive-keyring.asc] \
-https://download.docker.com/linux/debian \
-$(lsb_release -cs) stable" > /etc/apt/sources.list.d/docker.list
-RUN apt-get update && apt-get install -y docker-ce-cli
-USER root
+
+# Instalar dependencias básicas
+RUN apt-get update && apt-get install -y \
+    curl \
+    lsb-release \
+    python3 \
+    python3-pip \
+    python3-venv \
+    git \
+    && apt-get clean
+
+# Crear un entorno virtual y activar
+RUN python3 -m venv /opt/venv
+
+# Instalar pytest y pyinstaller en el entorno virtual
+RUN /opt/venv/bin/pip install --no-cache-dir pytest pyinstaller
+
+# Agregar el entorno virtual al PATH por defecto
+ENV PATH="/opt/venv/bin:$PATH"
+
+# Plugins de Jenkins
 RUN jenkins-plugin-cli --plugins "blueocean docker-workflow"
+
 ```
 
 ### 2. Infraestructura con Terraform
@@ -104,6 +118,7 @@ resource "docker_container" "dind" {
   privileged  = true
 }
 ```
+
 ### 3. Construcción y despliegue
 ```terminal
 # Construcción de la imagen personalizada
@@ -128,45 +143,46 @@ Crea un nuevo Pipeline en Jenkins en el botón de arriba a la derecha donde pone
 
 - En Pipeline script from SCM:
 - SCM: Git
-- URL: https://github.com/josan3/simple-node-js-react-npm-app
+- URL: https://github.com/josan3/simple-python-pyinstaller-app
 - Branch: main
 - El repositorio debe tener un Jenkinsfile con el siguiente contenido:
 
 ```Jenkinsfile
 pipeline {
     agent any
-
+    options {
+        skipStagesAfterUnstable()
+    }
     stages {
-        stage('Clone repository') {
+        stage('Build') {
             steps {
-                checkout scm
+                sh 'python -m py_compile sources/add2vals.py sources/calc.py'
+                stash(name: 'compiled-results', includes: 'sources/*.py*')
             }
         }
-        stage('Build Docker image') {
+        stage('Test') {
             steps {
-                sh 'docker build -t myapp:latest .'
+                sh 'py.test --junit-xml test-reports/results.xml sources/test_calc.py'
+            }
+            post {
+                always {
+                    junit 'test-reports/results.xml'
+                }
             }
         }
-        stage('Run Docker container') {
+        stage('Deliver') { 
             steps {
-                sh 'docker run -d -p 3000:3000 myapp:latest'
+                sh "pyinstaller --onefile sources/add2vals.py" 
+            }
+            post {
+                success {
+                    archiveArtifacts 'dist/add2vals' 
+                }
             }
         }
     }
 }
 ```
 
-- Además debemos crear en el main un dockerfile con el cual le diremos como debe ser la aplicacion que se lance
-
-```Dockerfile
-FROM node:18
-WORKDIR /usr/src/app
-COPY package*.json ./
-RUN npm install
-COPY . .
-EXPOSE 3000
-CMD ["npm", "start"]
-```
-
-### 6. Creacion pagina React
-Si has seguido los pasos correctamente podras comprobar como al darle a Construir ahora en el Pipeline se creará en localhost:3000 una pagina React.js
+### 6. Test resueltos
+Si has seguido los pasos correctamente podrás comprobar como al darle a Construir ahora en el Pipeline se puede ver como se han pasado todos los test en el Console Output
